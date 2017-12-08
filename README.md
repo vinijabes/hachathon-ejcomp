@@ -1,1 +1,0 @@
-# hachathon-ejcomp
