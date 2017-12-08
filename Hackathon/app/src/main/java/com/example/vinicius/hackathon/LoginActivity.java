@@ -34,6 +34,11 @@ import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
+import com.facebook.AccessToken;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import org.json.JSONException;
+import org.json.JSONObject;
 /**
  * A login screen that offers login via email/password.
  */
@@ -61,6 +66,24 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+
+    public void PostInFacebook(){
+        /*String accessToken = "EAACEdEose0cBAAZBJ5v8xGeWsRp2EqdTAcdRV3kq5XruThjLrKRxUMPPuVzjwzPXtDmbHqHKV0Uw0U3Hw3D4UaiERyZCA7HJPJDxh4V5dkYNES7M6hgf36DRzI3jAt9vuUVqyEwXOpRWAh57ayZAuTkWaEzI1qHb6JPhIZB6Qk8eunGAnE9e3WYIUMo9WlIM3S2shjVAEQZDZD";
+        GraphRequest request = GraphRequest.newMeRequest(
+                accessToken,
+                new GraphRequest.GraphJSONObjectCallback() {
+                    @Override
+                    public void onCompleted(
+                            JSONObject object,
+                            GraphResponse response) {
+                        // Application code
+                    }
+                });
+        Bundle parameters = new Bundle();
+        parameters.putString("fields", "id,name,link");
+        request.setParameters(parameters);
+        request.executeAsync();*/
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
